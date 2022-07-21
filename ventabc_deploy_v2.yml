@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ventabc-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ventabc
+  template:
+    metadata:
+      labels:
+        app: ventabc
+    spec:
+      containers:
+      - name: ventabc-container
+        image: seba28273/vtabc5001:v7
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        ports:
+        - containerPort: 5001
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
