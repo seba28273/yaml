@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ventabc-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: ventabc
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ventabc-container
-        image: seba28273/vtabc5001:v6
+        image: seba28273/vtabc5001:v7
         resources:
           limits:
             memory: "128Mi"
