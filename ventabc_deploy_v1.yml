@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: ventabc-container
-        image: seba28273/vtabc5001:1.0.3
+        image: seba28273/vtabc5001:1.0.4
         resources:
           limits:
             memory: "128Mi"
